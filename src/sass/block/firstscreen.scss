@@ -1,0 +1,58 @@
+
+.firstscreen {
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.6)),
+    url('../../img/header/bg.png') top center no-repeat;
+    height: 800px;
+
+    &::after {
+    content: '';
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+
+
+    @media (max-width:1024px) {
+        width: 100%;
+        margin-right: 0;
+    }
+    }
+
+    &__order {
+        width: 100%;
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: 265px;
+        font-family: $RobotoCondenced;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 140px;   
+        line-height: 164px;
+        @media (max-width:1024px) {
+            font-size: 130px;
+        }
+        @media (max-width:762px) {
+            font-size: 120px;
+        }
+    }
+
+    &__subtitle {
+        font-family: $RobotoCondenced;
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 27px;
+
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        @media (max-width:1024px) {
+            font-size: 18px;
+        }
+        @media (max-width:762px) {
+            font-size: 16px;
+        }
+    }
+}

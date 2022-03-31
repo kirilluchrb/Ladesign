@@ -1,0 +1,94 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 105px;
+
+    border-bottom: 0.5px solid #878787;
+    &__content {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__link {
+        margin: 50px;
+        text-transform: uppercase;
+        color: $whiteColor;
+        font-size: 14px;
+    }
+    &__link:hover {
+        transition: 0.2s ease;
+        color: $colorTitle;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+    &__contacts svg{
+        margin-right: 10px;
+    }
+    &__phone {
+        color: $whiteColor;
+        transition: 1s ease;
+    }
+    &__phone:hover {
+        transition: 1s ease;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header__burger {
+        background: #000;
+        position: absolute;
+        right: 5;
+        top: 5;
+
+        width:40px;
+        height:40px;
+        border: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__burger .line,
+    .header__burger .line::after , 
+    .header__burger .line::before {
+        display: inline-block;
+        background: #fff;
+        height: 4px;    
+    }
+
+    .header__burger .line::after , 
+    .header__burger .line::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+
+    }
+    .header__burger .line::before {
+        top: 10px;
+    }
+    .header__burger .line::after {
+        top: -10px;
+    }
+    .header__burger .line {
+        position: relative;
+        width: 80%;
+    }
+}
+@media (max-width:762px) {
+    
+}

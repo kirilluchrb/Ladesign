@@ -1,0 +1,41 @@
+@import "values.scss";
+@import "block/benefits.scss";
+@import "block/portfolio.scss";
+@import "block/header.scss";
+@import "block/footer.scss";
+@import "block/firstscreen.scss";
+
+body {
+    color: $whiteColor;
+    margin: 0;
+    padding: 0;
+    font-family: $RobotoCondenced;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media (max-width: 1024px) {
+        max-width: 930px;
+    }
+    @media (max-width: 768px) {
+        max-width: 678px;
+    }
+}
+
